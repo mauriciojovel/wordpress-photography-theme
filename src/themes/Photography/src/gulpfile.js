@@ -14,8 +14,8 @@ var browserSync = require('browser-sync').create();
 
 // Config variables
 var config = {
-  localUrl: 'http://wiklapp:8080',
-  host: 'wiklapp:8080',
+  localUrl: 'http://wiklapp.com',
+  host: 'wiklapp.com',
   styles: {
     input: './sass/**/*.scss',
     output: '../assets/css'

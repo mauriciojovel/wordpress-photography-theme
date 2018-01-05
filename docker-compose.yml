@@ -20,7 +20,7 @@ services:
     volumes_from:
      - wordpress
     ports:
-     - 8080:8080
+     - 80:80
     environment:
       POST_MAX_SIZE: 128m
   dbmysql:
@@ -38,7 +38,7 @@ services:
   npm-cli:
     build: ./docker/node
     links:
-      - nginx:wiklapp
+      - nginx:wiklapp.com
     ports:
       - 3000:3000
       - 3001:3001
