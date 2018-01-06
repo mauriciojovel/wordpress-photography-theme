@@ -86,10 +86,10 @@ akismet
 **/plugins/index.php
 
 #theme resources
-**/assets/css/**/*.css
-**/assets/css/maps
-**/assets/js/**/*.js
-**/assets/js/**/*.js.map
+**/themes/**/assets/css/**/*.css
+**/themes/**/assets/css/maps
+**/themes/**/assets/js/**/*.js
+**/themes/**/assets/js/**/*.js.map
 !**/assets/js/jquery/**/*.js
 !**/assets/js/jquery/**/*.js.map
 !**/assets/js/bootstrap/**/*.js
