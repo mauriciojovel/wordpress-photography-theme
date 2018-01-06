@@ -82,7 +82,7 @@ function photography_scripts() {
 	wp_deregister_script('jquery');
 	
 	wp_enqueue_style( 'photography-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'theme-css', $themeCssPathUrl, array(), filemtime($themeCssPath) );
+	wp_enqueue_style( 'theme', $themeCssPathUrl, array('photography-style'), filemtime($themeCssPath) );
 	
 	wp_enqueue_script('jquery', $jqueryPathUrl, array(), filemtime($jqueryPath), true);
     wp_enqueue_script('js-bootstrap', $bootstrapBundlePathUrl, array('jquery'), filemtime($bootstrapBundlePath), true);
@@ -91,6 +91,7 @@ function photography_scripts() {
 
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/include/bs4navwalker.php';
+require_once get_template_directory() . '/include/bs4navwalkerRight.php';
 
 // Create your own activation plugin on: http://tgmpluginactivation.com/download/
 require_once get_template_directory() . '/activation/plugins.php';

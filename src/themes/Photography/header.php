@@ -19,7 +19,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark <?php echo (is_page_template('templates/hero-home.php') ? 'hero' : 'bg-primary') ?>">
         <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
           <?php echo get_bloginfo('name') ?>
         </a>
@@ -36,8 +36,8 @@
               'menu_id'         => false,
               'menu_class'      => 'navbar-nav mr-auto',
               'depth'           => 2,
-              'fallback_cb'     => 'bs4navwalker::fallback',
-              'walker'          => new bs4navwalker()
+              'fallback_cb'     => 'bs4NavwalkerRight::fallback',
+              'walker'          => new bs4NavwalkerRight()
             ) );
         ?>
     </nav>

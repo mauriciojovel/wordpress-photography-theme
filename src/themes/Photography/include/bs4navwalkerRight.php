@@ -59,6 +59,9 @@ class bs4NavwalkerRight extends Walker_Nav_Menu
      */
     public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
         $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+        if( !$depth ) {
+            $output .= '</ul><ul class="navbar-nav">';
+        }
 
         $classes = empty( $item->classes ) ? array() : (array) $item->classes;
         $classes[] = 'menu-item-' . $item->ID;
