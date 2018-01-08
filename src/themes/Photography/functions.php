@@ -95,3 +95,12 @@ require_once get_template_directory() . '/include/bs4navwalkerRight.php';
 
 // Create your own activation plugin on: http://tgmpluginactivation.com/download/
 require_once get_template_directory() . '/activation/plugins.php';
+
+/**
+ * ACF
+ */
+
+// Add custom option page
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
