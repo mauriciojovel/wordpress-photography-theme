@@ -76,7 +76,7 @@
 <?php   while ( $query->have_posts() ) : $query->the_post(); ?>
             <?php set_query_var( 'active', ( $i == 0 ? 'active' : '' ) ); ?>
             <?php if ( $i == 0 ) : ?>
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="50000">
                     <ol class="carousel-indicators">
                         <?php for($j = 0 ; $j < $count ; $j++ ) : ?>
                             <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $j ?>" class="<?php echo ( $j == 0 ? 'active': '' ) ?>"></li>
