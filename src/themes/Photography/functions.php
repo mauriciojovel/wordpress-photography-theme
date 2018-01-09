@@ -104,3 +104,11 @@ require_once get_template_directory() . '/activation/plugins.php';
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 }
+
+// Remove admin bar
+add_action('after_setup_theme', 'remove_admin_bar');
+function remove_admin_bar() {
+	if (!current_user_can('administrator') && !is_admin()) {
+		show_admin_bar(false);
+	}
+}
