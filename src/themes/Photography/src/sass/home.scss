@@ -33,7 +33,10 @@ nav {
   -webkit-background-size: auto;
   -moz-background-size: auto;
   -o-background-size: auto;
-  background-size: contain;
+  background-size: cover;
+  @include media-breakpoint-up(lg) {
+    background-size: contain;
+  }
 }
 
 .carousel-caption {
