@@ -4,7 +4,7 @@
         <div class="container pb-4 pb-lg-3">
             <div class="row align-items-center">
                 <div class="col-sm-12 col-lg-3 text-center p-1">
-                    <?php echo get_avatar( get_the_author_meta( 'ID' ), 75, null, false, array('class' => array( 'profile-img', 'img-thumbnail', 'rounded-circle' ) ) ); ?>
+                    <?php echo get_avatar( get_the_author_meta( 'ID' ), 75, '', false, array('class' => array( 'profile-img', 'img-thumbnail', 'rounded-circle' ) ) ); ?>
                 </div>
                 <div class="col-sm-12 col-lg-6 photo-text p-1 d-none d-lg-block">
                     <?php the_content(); ?>
