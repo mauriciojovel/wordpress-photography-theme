@@ -4,7 +4,7 @@
         <div class="container pb-4 pb-lg-3">
             <div class="row align-items-center">
                 <div class="col-sm-12 col-lg-3 text-center p-1">
-                    <img alt="" src="<?php echo get_avatar_url( get_the_author_meta( 'ID' ),  array( 'size' => 75, 'default' => 'mysteryman' ) ); ?>" class="avatar avatar-wordpress-social-login avatar-75 photo profile-img img-thumbnail rounded-circle" height="75" width="75">
+                    <img alt="" src="<?php echo get_avatar_url( get_the_author_meta( 'ID' ),  array( 'size' => 75 ) ); ?>" class="avatar avatar-wordpress-social-login avatar-75 photo profile-img img-thumbnail rounded-circle" height="75" width="75">
                 </div>
                 <div class="col-sm-12 col-lg-6 photo-text p-1 d-none d-lg-block">
                     <?php the_content(); ?>
