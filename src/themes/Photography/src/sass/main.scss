@@ -2,3 +2,9 @@
 @import "vendors/bootstrap";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+.card-columns {
+    column-count: 2;
+    @include media-breakpoint-down(md) {
+        column-count: 1;
+    }
+}

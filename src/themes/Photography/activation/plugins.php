@@ -119,12 +119,6 @@ function photography_register_required_plugins() {
 			'required'  => true,
 		),
 		array(
-			'name'      => 'Custom Post Type UI',
-			'slug'      => 'custom-post-type-ui',
-			'required'  => true,
-		),
-
-		array(
 			'name'      => 'Simple Google reCAPTCHA',
 			'slug'      => 'simple-google-recaptcha',
 			'required'  => true,
