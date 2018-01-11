@@ -43,9 +43,9 @@
                     'field'    => 'slug',
                     'terms'    => $term,
                 ),
-            ),
+            )/*,
             'meta_key'		=> 'is_feature',
-            'meta_value'	=> true
+            'meta_value'	=> true*/
         );
         
         $query = new WP_Query( $args );
