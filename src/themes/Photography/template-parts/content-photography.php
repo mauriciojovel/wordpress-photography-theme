@@ -25,4 +25,6 @@
             </div>
         </div>
     </div>
+
+    <?php comment_form(); ?>
 </main><!-- /.container -->

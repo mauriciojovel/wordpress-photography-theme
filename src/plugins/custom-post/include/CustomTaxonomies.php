@@ -85,7 +85,7 @@ class CustomTaxonomies
             "hierarchical" => false,
             "rewrite" => array( "slug" => "photography", "with_front" => true ),
             "query_var" => true,
-            "supports" => array( "title", "editor", "thumbnail" ),
+            "supports" => array( "title", "editor", "thumbnail", "comments", "post-templates" ),
             "taxonomies" => array('week')
         );
 
