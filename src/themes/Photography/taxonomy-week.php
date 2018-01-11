@@ -11,7 +11,12 @@
  *
  * @package Photography
  */
-
+$weeks = get_categories( array(
+	'taxonomy' => 'week',
+	'hide_empty' => 0,
+	'orderby' => 'term_id',
+	'order' => 'DESC'
+ ) );
 get_header(); ?>
 	
 	<?php $description = explode( '<br />', substr(category_description(), 3, strlen( category_description() ) - 8 ) ); ?>
@@ -35,14 +40,11 @@ get_header(); ?>
                 <h2 class="text-center text-lg-left">
                     Weeks
                 </h2>
-                <ul class="list-group">
-                    <li class="list-group-item text-center text-lg-left">
-                        <a href="#">Week 1</a>
-                    </li>
-                    <li class="list-group-item text-center text-lg-left">
-                        <a href="#">Week 2</a>
-                    </li>
-                </ul>
+                <div class="list-group">
+					<?php foreach( $weeks as $week ): ?>
+                        <a class="list-group-item text-center text-lg-left <?php echo ( $week->name == single_cat_title( '', false ) ? 'active' : '' ); ?>" href="<?php echo esc_url( get_category_link( $week->term_id ) ) ?>"><?php echo $week->name ?> </a>
+					<?php endforeach ; ?>
+                </div>
             </div>
         </div>
         
