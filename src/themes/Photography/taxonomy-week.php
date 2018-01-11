@@ -42,7 +42,7 @@ get_header(); ?>
                 </h2>
                 <div class="list-group">
 					<?php foreach( $weeks as $week ): ?>
-                        <a class="list-group-item text-center text-lg-left <?php echo ( $week->name == single_cat_title( '', false ) ? 'active' : '' ); ?>" href="<?php echo esc_url( get_category_link( $week->term_id ) ) ?>"><?php echo $week->name ?> </a>
+                        <a class="list-group-item text-center text-lg-left <?php echo ( $week->name == single_cat_title( '', false ) ? 'active' : '' ); ?>" href="<?php echo esc_url( get_term_link( $week->term_id, 'week' ) ) ?>"><?php echo $week->name ?> </a>
 					<?php endforeach ; ?>
                 </div>
             </div>
