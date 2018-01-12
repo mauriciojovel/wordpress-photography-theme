@@ -56,12 +56,12 @@ class CustomRole
                 'install_plugins' => false, // User cant add new plugins
                 'update_plugin' => false, // User can’t update any plugins
                 'update_core' => false, // user cant perform core updates
-                'upload_files'=>true
+                'upload_files'=>false
             )
         );
 
         // Add the roles you'd like to administer the custom post types
-        $roles = array('photographer', 'judge', 'administrator');
+        $roles = array('photographer', 'administrator');
 
         // Loop through each role and assign capabilities
         foreach($roles as $the_role) {
@@ -99,7 +99,7 @@ class CustomRole
 
 
     static function delete_role() {
-        $roles = array('photographer', 'judge', 'administrator');
+        $roles = array('photographer', 'administrator');
 
         // Loop through each role and assign capabilities
         foreach($roles as $the_role) {

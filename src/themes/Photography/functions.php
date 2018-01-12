@@ -92,6 +92,7 @@ function photography_scripts() {
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/include/bs4navwalker.php';
 require_once get_template_directory() . '/include/bs4navwalkerRight.php';
+require_once get_template_directory() . '/include/class-wp-bootstrap-comment-walker.php';
 
 // Create your own activation plugin on: http://tgmpluginactivation.com/download/
 require_once get_template_directory() . '/activation/plugins.php';
