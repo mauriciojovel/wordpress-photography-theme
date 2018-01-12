@@ -83,6 +83,10 @@ function photography_scripts() {
 	
 	wp_enqueue_style( 'photography-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'theme', $themeCssPathUrl, array('photography-style'), filemtime($themeCssPath) );
+	wp_enqueue_style( 'simple-likes-public', 
+		get_template_directory_uri() . '/assets/css/simple-likes-public.css', 
+		array('theme'), 
+		filemtime(get_template_directory() . '/assets/css/simple-likes-public.css') );
 	
 	wp_enqueue_script('jquery', $jqueryPathUrl, array(), filemtime($jqueryPath), true);
     wp_enqueue_script('js-bootstrap', $bootstrapBundlePathUrl, array('jquery'), filemtime($bootstrapBundlePath), true);
@@ -93,6 +97,7 @@ function photography_scripts() {
 require_once get_template_directory() . '/include/bs4navwalker.php';
 require_once get_template_directory() . '/include/bs4navwalkerRight.php';
 require_once get_template_directory() . '/include/class-wp-bootstrap-comment-walker.php';
+require_once get_template_directory() . '/include/post-like.php';
 
 // Create your own activation plugin on: http://tgmpluginactivation.com/download/
 require_once get_template_directory() . '/activation/plugins.php';

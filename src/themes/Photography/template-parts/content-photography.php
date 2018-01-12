@@ -11,6 +11,7 @@
                 <div class="col-sm-12 <?php echo ( get_field('is_portratit') == 'true' ? '' : 'col-lg-6' ) ?> text-center p-1">
                     <?php remove_filter('the_content', 'wpautop') ?>
                     <?php the_content(); ?>
+                    <?php echo get_simple_likes_button( get_the_ID() ); ?>
                 </div>
                 <div class="col-sm-12 <?php echo ( get_field('is_portratit') == 'true' ? '' : 'col-lg-3' ) ?> text-center p-1">
                     <?php $imageLocation =  get_attached_file( get_field('_thumbnail_id') ); ?>
