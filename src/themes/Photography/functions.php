@@ -7,6 +7,11 @@
  * @package Photography
  */
 
+add_action( 'after_setup_theme', 'photography_theme_setup' );
+function photography_theme_setup(){
+    load_theme_textdomain( 'photography', get_template_directory() . '/languages' );
+}
+
 add_action( 'after_setup_theme', 'photography_setup' );
 if ( ! function_exists( 'photography_setup' ) ) :
 /**

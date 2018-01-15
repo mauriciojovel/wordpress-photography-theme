@@ -30,7 +30,7 @@ function sl_enqueue_scripts() {
     filemtime(get_template_directory() . '/assets/js/simple-likes-public.js'), true );
 	wp_localize_script( 'simple-likes-public-js', 'simpleLikes', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
-		'like' => __( 'Like', 'photograpy' ),
+		'like' => __( 'Like', 'photography' ),
 		'unlike' => __( 'Unlike', 'photography' )
 	) ); 
 }

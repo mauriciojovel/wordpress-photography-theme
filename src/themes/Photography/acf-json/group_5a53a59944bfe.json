@@ -1,10 +1,10 @@
 {
     "key": "group_5a53a59944bfe",
-    "title": "Photo Style",
+    "title": "Estilo de Fotos",
     "fields": [
         {
             "key": "field_5a53a59e92209",
-            "label": "Is Portrait",
+            "label": "Es retrato",
             "name": "is_portratit",
             "type": "true_false",
             "instructions": "",
@@ -42,5 +42,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1515453998
+    "modified": 1516040878
 }

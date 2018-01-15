@@ -38,7 +38,7 @@ get_header(); ?>
             </div>
             <div class="col-sm-12 col-lg-2">
                 <h2 class="text-center text-lg-left">
-                    Weeks
+                    <?php echo __('Weeks', 'photography'); ?>
                 </h2>
                 <div class="list-group">
 					<?php foreach( $weeks as $week ): ?>
