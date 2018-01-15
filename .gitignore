@@ -84,6 +84,7 @@ src/themes/index.php
 akismet
 **/plugins/hello.php
 **/plugins/index.php
+**/plugins/loco-translate
 
 #theme resources
 **/themes/**/assets/css/**/*.css
@@ -96,3 +97,4 @@ akismet
 !**/assets/js/bootstrap/**/*.js.map
 wordpress/**
 !wordpress/.gitkeep
+!**/languages/themes
