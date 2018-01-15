@@ -25,12 +25,12 @@ class CustomTaxonomies
          */
 
         $labels = array(
-            "name" => __("Weeks", "photography"),
-            "singular_name" => __("Week", "photography"),
+            "name" => __("Weeks", 'photography-role'),
+            "singular_name" => __("Week", 'photography-role'),
         );
 
         $args = array(
-            "label" => __("Weeks", "photography"),
+            "label" => __("Weeks", 'photography-role'),
             "labels" => $labels,
             "public" => true,
             "hierarchical" => true,
@@ -50,7 +50,7 @@ class CustomTaxonomies
                 "assign_terms" => "edit_photographies"
             )
         );
-        register_taxonomy("week", array("photography"), $args);
+        register_taxonomy("week", array('photography'), $args);
     }
 
     function register_my_cpts_photography() {
@@ -60,16 +60,16 @@ class CustomTaxonomies
          */
 
         $labels = array(
-            "name" => __( "Photographies", "photography" ),
-            "singular_name" => __( "Photography", "photography" ),
-            "featured_image" => __( "Week Photography", "photography" ),
-            "set_featured_image" => __( "Set Week Photography", "photography" ),
-            "remove_featured_image" => __( "Remove Week Photography", "photography" ),
-            "use_featured_image" => __( "Use Week Photography", "photography" ),
+            "name" => __( "Photographies", 'photography-role' ),
+            "singular_name" => __( 'photography', 'photography-role' ),
+            "featured_image" => __( "Week Photography", 'photography-role' ),
+            "set_featured_image" => __( "Set Week Photography", 'photography-role' ),
+            "remove_featured_image" => __( "Remove Week Photography", 'photography-role' ),
+            "use_featured_image" => __( "Use Week Photography", 'photography-role' ),
         );
 
         $args = array(
-            "label" => __( "Photographies", "photography" ),
+            "label" => __( "Photographies", 'photography-role' ),
             "labels" => $labels,
             "description" => "",
             "public" => true,
@@ -80,16 +80,16 @@ class CustomTaxonomies
             "has_archive" => false,
             "show_in_menu" => true,
             "exclude_from_search" => false,
-            "capability_type" => array("photography", "photographies"),
+            "capability_type" => array('photography', "photographies"),
             "map_meta_cap" => true,
             "hierarchical" => false,
-            "rewrite" => array( "slug" => "photography", "with_front" => true ),
+            "rewrite" => array( "slug" => 'photography', "with_front" => true ),
             "query_var" => true,
             "supports" => array( "title", "editor", "thumbnail", "comments", "post-templates" ),
             "taxonomies" => array('week')
         );
 
-        register_post_type( "photography", $args );
+        register_post_type( 'photography', $args );
     }
 
 }

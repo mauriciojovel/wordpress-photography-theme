@@ -25,7 +25,7 @@ class CustomRole
 
     static function add_roles_on_plugin_activation() {
         add_role( 'photographer', __(
-            'Photographer', 'photography' ),
+            'Photographer', 'photography-role' ),
             array(
                 'read' => true, // true allows this capability
                 'edit_posts' => false, // Allows user to edit their own posts
@@ -43,7 +43,7 @@ class CustomRole
         );
 
         add_role( 'judge', __(
-            'Judge', 'photography' ),
+            'Judge', 'photography-role' ),
             array(
                 'read' => true, // true allows this capability
                 'edit_posts' => false, // Allows user to edit their own posts
@@ -171,7 +171,7 @@ class CustomRole
                     admin_url('edit.php?post_type=photographies'),
                     $class,
                     $result->found_posts,
-                    __('All', 'photograpy')
+                    __('All', 'photography-role')
                 );
             elseif( $type['status'] == 'publish' ):
                 $class = ($wp_query->query_vars['post_status'] == 'publish') ? ' class="current"' : '';
@@ -180,7 +180,7 @@ class CustomRole
                     admin_url('edit.php?post_type=photographies&post_status='.$type['status']),
                     $class,
                     $result->found_posts,
-                    __('Publish', 'photograpy')
+                    __('Publish', 'photography-role')
                 );
             elseif( $type['status'] == 'draft' ):
                 $class = ($wp_query->query_vars['post_status'] == 'draft') ? ' class="current"' : '';
@@ -189,7 +189,7 @@ class CustomRole
                     admin_url('edit.php?post_type=photographies&post_status='.$type['status']),
                     $class,
                     $result->found_posts,
-                    __('Draft', 'photograpy')
+                    __('Draft', 'photography-role')
                 );
             elseif( $type['status'] == 'pending' ):
                 $class = ($wp_query->query_vars['post_status'] == 'pending') ? ' class="current"' : '';
@@ -198,7 +198,7 @@ class CustomRole
                     admin_url('edit.php?post_type=photographies&post_status='.$type['status']),
                     $class,
                     $result->found_posts,
-                    __('Pending', 'photograpy')
+                    __('Pending', 'photography-role')
                 );
             elseif( $type['status'] == 'trash' ):
                 $class = ($wp_query->query_vars['post_status'] == 'trash') ? ' class="current"' : '';
@@ -207,7 +207,7 @@ class CustomRole
                     admin_url('edit.php?post_type=photographies&post_status='.$type['status']),
                     $class,
                     $result->found_posts,
-                    __('Trash', 'photograpy')
+                    __('Trash', 'photography-role')
                 );
             endif;
         }

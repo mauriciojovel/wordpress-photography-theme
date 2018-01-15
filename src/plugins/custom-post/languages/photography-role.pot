@@ -1,0 +1,87 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-15 17:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: include/CustomRole.php:27
+msgid "Photographer"
+msgstr ""
+
+#: include/CustomRole.php:45
+msgid "Judge"
+msgstr ""
+
+#: include/CustomRole.php:174
+msgid "All"
+msgstr ""
+
+#: include/CustomRole.php:183
+msgid "Publish"
+msgstr ""
+
+#: include/CustomRole.php:192
+msgid "Draft"
+msgstr ""
+
+#: include/CustomRole.php:201
+msgid "Pending"
+msgstr ""
+
+#: include/CustomRole.php:210
+msgid "Trash"
+msgstr ""
+
+#: include/CustomTaxonomies.php:28 include/CustomTaxonomies.php:33
+msgid "Weeks"
+msgstr ""
+
+#: include/CustomTaxonomies.php:29
+msgid "Week"
+msgstr ""
+
+#: include/CustomTaxonomies.php:63 include/CustomTaxonomies.php:72
+msgid "Photographies"
+msgstr ""
+
+#: include/CustomTaxonomies.php:64
+msgid "photography"
+msgstr ""
+
+#: include/CustomTaxonomies.php:65
+msgid "Week Photography"
+msgstr ""
+
+#: include/CustomTaxonomies.php:66
+msgid "Set Week Photography"
+msgstr ""
+
+#: include/CustomTaxonomies.php:67
+msgid "Remove Week Photography"
+msgstr ""
+
+#: include/CustomTaxonomies.php:68
+msgid "Use Week Photography"
+msgstr ""
+
+#. Name of the plugin
+msgid "Photography Role"
+msgstr ""
+
+#. Description of the plugin
+msgid "Add Photography Role to wordpress"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mauricio Jovel"
+msgstr ""

@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Photography Role\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-15 17:56+0000\n"
+"PO-Revision-Date: 2018-01-15 17:56+0000\n"
+"Last-Translator: admin <mjovel+admin@applaudostudios.com>\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es-ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: include/CustomTaxonomies.php:64
+msgid "photography"
+msgstr "Fotografia"
+
+#: include/CustomRole.php:27
+msgid "Photographer"
+msgstr "Fotografo"
+
+#: include/CustomRole.php:45
+msgid "Judge"
+msgstr "Jurado"
+
+#: include/CustomRole.php:174
+msgid "All"
+msgstr "Todos"
+
+#: include/CustomRole.php:183
+msgid "Publish"
+msgstr "Publicado"
+
+#: include/CustomRole.php:192
+msgid "Draft"
+msgstr "Borrador"
+
+#: include/CustomRole.php:201
+msgid "Pending"
+msgstr "Pendiente"
+
+#: include/CustomRole.php:210
+msgid "Trash"
+msgstr "Basurero"
+
+#: include/CustomTaxonomies.php:28 include/CustomTaxonomies.php:33
+msgid "Weeks"
+msgstr "Semanas"
+
+#: include/CustomTaxonomies.php:29
+msgid "Week"
+msgstr "Semana"
+
+#: include/CustomTaxonomies.php:63 include/CustomTaxonomies.php:72
+msgid "Photographies"
+msgstr "Fotografias"
+
+#: include/CustomTaxonomies.php:65
+msgid "Week Photography"
+msgstr "Fotografias de la Semana"
+
+#: include/CustomTaxonomies.php:66
+msgid "Set Week Photography"
+msgstr "Añadir Fotografia de la Semana"
+
+#: include/CustomTaxonomies.php:67
+msgid "Remove Week Photography"
+msgstr "Eliminar Fotografía de la Semana"
+
+#: include/CustomTaxonomies.php:68
+msgid "Use Week Photography"
+msgstr "Usar Fotografia de la Semana"
+
+#. Name of the plugin
+msgid "Photography Role"
+msgstr "Rol Fotografo"
+
+#. Description of the plugin
+msgid "Add Photography Role to wordpress"
+msgstr "Agrega el rol de fotografo a wordpress"
+
+#. Author of the plugin
+msgid "Mauricio Jovel"
+msgstr "Mauricio Jovel"
