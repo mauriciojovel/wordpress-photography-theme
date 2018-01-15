@@ -1,0 +1,11 @@
+.card {
+    &.profile {
+        height: 300px;
+        width: 300px;
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

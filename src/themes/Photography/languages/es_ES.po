@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Photography Contest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-15 19:45+0000\n"
-"PO-Revision-Date: 2018-01-15 19:45+0000\n"
+"POT-Creation-Date: 2018-01-15 22:31+0000\n"
+"PO-Revision-Date: 2018-01-15 22:31+0000\n"
 "Last-Translator: admin <mjovel+admin@applaudostudios.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es-ES\n"
@@ -13,9 +13,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: include/post-like.php:33
-msgid "Like"
-msgstr "Me gusta"
+#. Name of the template
+msgid "About us"
+msgstr "Acerca de Nosotros"
+
+#: templates/about.php:15
+msgid "Our Photographers"
+msgstr "Nuestros Fotografos"
+
+#: templates/about.php:40
+msgid "Our Jury"
+msgstr "Nuestro Jurado"
 
 #: activation/class-tgm-plugin-activation.php:346
 #, php-format
@@ -442,6 +450,10 @@ msgstr "Buscando Resultados para: %s"
 #. Name of the template
 msgid "Hero Home"
 msgstr "Hero Inicio"
+
+#: include/post-like.php:33
+msgid "Like"
+msgstr "Me gusta"
 
 #: include/post-like.php:34
 msgid "Unlike"

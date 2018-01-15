@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-15 19:45+0000\n"
+"POT-Creation-Date: 2018-01-15 22:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -33,6 +33,18 @@ msgstr ""
 
 #. Name of the template
 msgid "Hero Home"
+msgstr ""
+
+#. Name of the template
+msgid "About us"
+msgstr ""
+
+#: templates/about.php:15
+msgid "Our Photographers"
+msgstr ""
+
+#: templates/about.php:40
+msgid "Our Jury"
 msgstr ""
 
 #: include/post-like.php:33
