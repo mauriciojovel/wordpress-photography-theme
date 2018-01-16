@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Photography Contest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-15 22:31+0000\n"
-"PO-Revision-Date: 2018-01-15 22:31+0000\n"
+"POT-Creation-Date: 2018-01-16 00:44+0000\n"
+"PO-Revision-Date: 2018-01-16 00:45+0000\n"
 "Last-Translator: admin <mjovel+admin@applaudostudios.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es-ES\n"
@@ -13,17 +13,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#. Name of the template
-msgid "About us"
+#: functions.php:68
+msgid "About Us"
 msgstr "Acerca de Nosotros"
 
-#: templates/about.php:15
-msgid "Our Photographers"
-msgstr "Nuestros Fotografos"
-
-#: templates/about.php:40
-msgid "Our Jury"
-msgstr "Nuestro Jurado"
+#: footer.php:18
+msgid "Info"
+msgstr "Información"
 
 #: activation/class-tgm-plugin-activation.php:346
 #, php-format
@@ -434,10 +430,6 @@ msgstr ""
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "¡Oops! La pagina no puede ser encontrada."
 
-#: functions.php:46
-msgid "Primary"
-msgstr "Principal"
-
 #: taxonomy-week.php:41
 msgid "Weeks"
 msgstr "Semanas"
@@ -450,6 +442,18 @@ msgstr "Buscando Resultados para: %s"
 #. Name of the template
 msgid "Hero Home"
 msgstr "Hero Inicio"
+
+#. Name of the template
+msgid "About us"
+msgstr "Acerca de Nosotros"
+
+#: templates/about.php:15
+msgid "Our Photographers"
+msgstr "Nuestros Fotografos"
+
+#: templates/about.php:40
+msgid "Our Jury"
+msgstr "Nuestro Jurado"
 
 #: include/post-like.php:33
 msgid "Like"

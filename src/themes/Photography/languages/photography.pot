@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-15 22:31+0000\n"
+"POT-Creation-Date: 2018-01-16 00:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -18,12 +18,16 @@ msgstr ""
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: functions.php:46
-msgid "Primary"
+#: functions.php:68
+msgid "About Us"
 msgstr ""
 
 #: taxonomy-week.php:41
 msgid "Weeks"
+msgstr ""
+
+#: footer.php:18
+msgid "Info"
 msgstr ""
 
 #: search.php:15

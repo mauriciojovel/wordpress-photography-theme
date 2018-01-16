@@ -3,7 +3,12 @@ footer {
     min-height: 100px;
     font-size: 0.9rem;
     color: $light;
+    text-align: center;
 
+    @include media-breakpoint-up(lg) {
+        text-align: left;
+    }
+    
     h3 {
         font-size: 1.2rem;
         &:after {
@@ -11,9 +16,13 @@ footer {
             display: block;
             height: 1px;
             background-color: $light;
-            max-width: 50%;
+            max-width: 100%;
             margin-top: $spacer * 0.5;
-            margin-bottom: $spacer * 0.5
+            margin-bottom: $spacer * 0.5;
+
+            @include media-breakpoint-up(lg) {
+                max-width: 50%;
+            }
         }
     }
 
