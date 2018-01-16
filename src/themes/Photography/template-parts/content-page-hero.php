@@ -4,12 +4,18 @@
         <div class="container pb-4 pb-lg-3">
             <div class="row align-items-center">
                 <div class="col-sm-12 col-lg-3 text-center p-1">
-                <?php echo get_avatar( get_the_author_meta( 'ID' ), 75, '', '', array('class' => array( 'profile-img', 'img-thumbnail', 'rounded-circle' ) ) ); ?> 
+                <?php 
+                    $imgUrl = wsl_get_user_custom_avatar( get_the_author_meta( 'ID' ) ); 
+                    $imgUrl = $imgUrl == '' ? get_avatar_url( get_the_author_meta( 'ID' ) ) : $imgUrl;
+                ?>
+        
+                <img class = "img-thumbnail rounded-circle mx-auto d-block" src="<?php echo esc_url(  $imgUrl ); ?>" width="75" height="75" />
+                
                 </div>
                 <div class="col-sm-12 col-lg-6 photo-text p-1 d-none d-lg-block">
                     <?php the_content(); ?>
                 </div>
-                <div class="col-sm-12 col-lg-3 photo-text p-1">
+                <div class="col-sm-12 col-lg-2 photo-text p-1">
                     <?php $imageLocation =  get_attached_file( get_field('_thumbnail_id') ); ?>
                     <?php $exif = exif_read_data( $imageLocation, 'EXIF' ); ?>
                         <b><?php echo $exif['Model'] ?></b>
@@ -19,6 +25,9 @@
                         <?php echo ( $time < 1 ? $exif['ExposureTime'] : $time ) ?>''
                         <?php echo eval('return '.$exif['FocalLength'].';') ?>mm
                         ISO <?php echo $exif['ISOSpeedRatings'] ?>
+                </div>
+                <div class="col-sm-12 col-lg-1 photo-text p-1 text-center">
+                    <?php echo get_simple_likes_button( get_the_ID() ); ?>
                 </div>
             </div>
         </div>

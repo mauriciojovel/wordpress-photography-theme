@@ -48,6 +48,27 @@ nav {
       background-color: $hero-background;
   }
 
+  a {
+    .sl-icon {
+      color: $white;
+    }
+
+    .sl-count {
+      color: $white;
+    }
+
+    &.liked {
+      .sl-icon {
+        color: $red;
+      }
+  
+      .sl-count {
+        color: $white;
+      } 
+    }
+  }
+
+
   .profile-img {
     max-height: 75px;
   }

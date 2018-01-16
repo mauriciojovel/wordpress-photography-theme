@@ -6,7 +6,7 @@
             $imgUrl = $imgUrl == '' ? get_avatar_url( $user->ID ) : $imgUrl;
         ?>
         
-            <img class = "img-thumbnail rounded-circle mx-auto d-block" src="<?php echo esc_url(  $imgUrl ); ?>" />
+        <img class = "img-thumbnail rounded-circle mx-auto d-block" src="<?php echo esc_url(  $imgUrl ); ?>" />
         
         <h5 class = "card-title text-center py-2" > <?php echo $user->display_name; ?> </h5>
         <p class = "card-text text-center" ></p>
