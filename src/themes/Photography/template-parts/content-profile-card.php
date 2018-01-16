@@ -10,6 +10,6 @@
         
         <h5 class = "card-title text-center py-2" > <?php echo $user->display_name; ?> </h5>
         <p class = "card-text text-center" ></p>
-        <p class="card-text text-center"><small class="text-muted"> <?php echo $bio; ?> </small></p>
+        <p class="card-text text-center"><small class="<?php echo ( $background != '' ? 'text-light' : 'text-muted' ) ?>"> <?php echo $bio; ?> </small></p>
     </div>
 </div>
