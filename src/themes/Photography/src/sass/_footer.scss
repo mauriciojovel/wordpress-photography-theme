@@ -29,4 +29,11 @@ footer {
     a {
         color: $light;
     }
+
+    ul {
+        li {
+            padding-top: $spacer * 0.5;
+            padding-bottom: $spacer * 0.5;
+        }
+    }
 }
