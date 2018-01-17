@@ -17,6 +17,32 @@ $weeks = get_categories( array(
 	'orderby' => 'term_id',
 	'order' => 'DESC'
  ) );
+
+//Adding the Open Graph in the Language Attributes
+function add_opengraph_doctype( $output ) {
+    return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
+}
+add_filter('language_attributes', 'add_opengraph_doctype');
+
+//Lets add Open Graph Meta Info
+function insert_fb_in_head() {
+    global $post;
+    echo '<meta property="og:title" content="' . single_cat_title( '', false ) . '"/>';
+    echo '<meta property="og:type" content="article"/>';
+    echo '<meta property="og:url" content="' . get_term_link( get_queried_object()->term_id, 'week' ) . '"/>';
+    echo '<meta property="og:site_name" content="'.substr(category_description(), 3, strlen( category_description() ) - 8 ).'"/>';
+    // if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
+    //     $default_image="http://example.com/image.jpg"; //replace this with a default image on your server or an image in your media library
+    //     echo '<meta property="og:image" content="' . $default_image . '"/>';
+    // } else{
+    //     $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+    //     echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
+    // }
+    echo "
+    ";
+}
+add_action( 'wp_head', 'insert_fb_in_head', 5 );
+
 get_header(); ?>
 	
 	<?php $description = explode( '<br />', substr(category_description(), 3, strlen( category_description() ) - 8 ) ); ?>
