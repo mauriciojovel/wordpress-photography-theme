@@ -30,7 +30,7 @@ function insert_fb_in_head() {
     echo '<meta property="og:url"           content="' . get_term_link( get_queried_object()->term_id, 'week' ) . '"/>';
     echo '<meta property="og:type"          content="article"/>';
     echo '<meta property="og:title"         content="' . single_cat_title( '', false ) . '"/>';
-    echo '<meta property="og:description"   content="'.str_replace('<br />', PHP_EOL, substr(category_description(), 3, strlen( category_description() ) - 8 )).'"/>';
+    echo '<meta property="og:description"   content="'.str_replace('<br />', '.', substr(category_description(), 3, strlen( category_description() ) - 8 )).'"/>';
     // if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
     //     $default_image="http://example.com/image.jpg"; //replace this with a default image on your server or an image in your media library
     //     echo '<meta property="og:image" content="' . $default_image . '"/>';
