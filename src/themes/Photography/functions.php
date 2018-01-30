@@ -103,6 +103,7 @@ require_once get_template_directory() . '/include/bs4navwalker.php';
 require_once get_template_directory() . '/include/bs4navwalkerRight.php';
 require_once get_template_directory() . '/include/class-wp-bootstrap-comment-walker.php';
 require_once get_template_directory() . '/include/post-like.php';
+require_once get_template_directory() . '/include/class-wp-rating-comments.php';
 
 // Create your own activation plugin on: http://tgmpluginactivation.com/download/
 require_once get_template_directory() . '/activation/plugins.php';
@@ -123,3 +124,5 @@ function remove_admin_bar() {
 		show_admin_bar(false);
 	}
 }
+
+new Rating_Comments();

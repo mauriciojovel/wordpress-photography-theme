@@ -1,5 +1,13 @@
 <main role="main" class="container">
-    <div class="row">
+    <h1 class="mt-2 text-center text-capitalize"><?php the_title() ?></h1>
+    <?php $weeks = get_the_terms(get_the_ID(), 'week') ?>
+    <?php foreach( $weeks as $week ): ?>
+        <h7 class="d-block text-center">
+            <?php echo $week->name; ?>
+            <?php echo $week->description; ?>
+        </h7>
+    <?php endforeach; ?>
+    <div class="row mt-2 mt-lg-4">
         <div class="col-sm-12 <?php echo ( get_field('is_portratit') == 'true' ? 'col-lg-8' : '' ) ?> text-center">
             <?php the_post_thumbnail('full', ['class' => 'img-fluid']); ?>
         </div>

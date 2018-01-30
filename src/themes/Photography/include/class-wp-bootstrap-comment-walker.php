@@ -39,14 +39,18 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
 						<h4 class="media-heading "><?php echo get_comment_author_link() ?></h4>
 					</div>
 					<div class="comment-metadata flex-center">
-						<a class="hidden-xs-down" href="<?php echo esc_url( get_comment_link( $comment->comment_ID, $args ) ); ?>">
+						<a class="d-none d-lg-block" href="<?php echo esc_url( get_comment_link( $comment->comment_ID, $args ) ); ?>">
 							<time class=" small btn btn-secondary chip" datetime="<?php comment_time( 'c' ); ?>">
 								<?php comment_date() ?>,
 								<?php comment_time() ?>
 							</time>
 						</a>
+						<?php $rating = get_comment_meta( get_comment_ID(), 'rating', true ); ?>
 						<ul class="list-inline">
-							<?php edit_comment_link( __( 'Edit' ), '<li class="edit-link list-inline-item btn btn-secondary chip">', '</li>' ); ?>
+							<?php if ( $rating ): ?>
+								<li class="list-inline-item" ><span class="badge badge-danger"><?php echo $rating ?><sup>o</sup> <?php echo __( 'Place', 'photography' ) ?></span></li>
+							<?php endif; ?>
+							<?php edit_comment_link( __( 'Edit', 'photography' ), '<li class="edit-link list-inline-item btn btn-secondary chip">', '</li>' ); ?>
 							<?php
 								comment_reply_link( array_merge( $args, array(
 									'add_below' => 'div-comment',
@@ -61,7 +65,7 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
 				</div>
 				<div class="card-block warning-color">
 					<?php if ( '0' == $comment->comment_approved ) : ?>
-					<p class="card-text comment-awaiting-moderation label label-info text-muted small"><?php _e( 'Your comment is awaiting moderation.' ); ?></p>
+					<p class="card-text comment-awaiting-moderation label label-info text-muted small"><?php _e( 'Your comment is awaiting moderation.', 'photography' ); ?></p>
 					<?php endif; ?>				
 
 					<div class="comment-content card-text">

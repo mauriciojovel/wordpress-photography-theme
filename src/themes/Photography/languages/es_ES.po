@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Photography Contest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 00:44+0000\n"
-"PO-Revision-Date: 2018-01-16 00:45+0000\n"
+"POT-Creation-Date: 2018-01-30 20:28+0000\n"
+"PO-Revision-Date: 2018-01-30 20:28+0000\n"
 "Last-Translator: admin <mjovel+admin@applaudostudios.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es-ES\n"
@@ -13,13 +13,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: functions.php:68
-msgid "About Us"
-msgstr "Acerca de Nosotros"
-
-#: footer.php:18
-msgid "Info"
-msgstr "Información"
+#: include/class-wp-bootstrap-comment-walker.php:50
+msgid "Place"
+msgstr "Lugar"
 
 #: activation/class-tgm-plugin-activation.php:346
 #, php-format
@@ -430,9 +426,17 @@ msgstr ""
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "¡Oops! La pagina no puede ser encontrada."
 
-#: taxonomy-week.php:41
+#: functions.php:68
+msgid "About Us"
+msgstr "Acerca de Nosotros"
+
+#: taxonomy-week.php:67
 msgid "Weeks"
 msgstr "Semanas"
+
+#: footer.php:18
+msgid "Info"
+msgstr "Información"
 
 #: search.php:15
 #, php-format
@@ -454,6 +458,22 @@ msgstr "Nuestros Fotografos"
 #: templates/about.php:40
 msgid "Our Jury"
 msgstr "Nuestro Jurado"
+
+#: include/class-wp-bootstrap-comment-walker.php:53
+msgid "Edit"
+msgstr "Editar"
+
+#: include/class-wp-bootstrap-comment-walker.php:68
+msgid "Your comment is awaiting moderation."
+msgstr "Tú comentario esta en espera de aprobación."
+
+#: include/class-wp-rating-comments.php:17
+msgid "Rating"
+msgstr "Calificación"
+
+#: include/class-wp-rating-comments.php:19
+msgid "No rating"
+msgstr "Sin Calificación"
 
 #: include/post-like.php:33
 msgid "Like"
@@ -478,6 +498,22 @@ msgstr "Ver Foto"
 #: template-parts/content.php:16
 msgid "Read more"
 msgstr "Leer mas"
+
+#: template-parts/content-comments.php:10
+msgid "Leave your comment"
+msgstr "Deja tú comentario"
+
+#: template-parts/content-comments.php:14
+msgid "Name"
+msgstr "Nombre"
+
+#: template-parts/content-comments.php:17
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: template-parts/content-comments.php:21
+msgid "Comment"
+msgstr "Comentario"
 
 #: activation/class-tgm-plugin-activation.php:327
 msgid "Install Required Plugins"

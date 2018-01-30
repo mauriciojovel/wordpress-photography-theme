@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 00:44+0000\n"
+"POT-Creation-Date: 2018-01-30 20:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "About Us"
 msgstr ""
 
-#: taxonomy-week.php:41
+#: taxonomy-week.php:67
 msgid "Weeks"
 msgstr ""
 
@@ -51,6 +51,26 @@ msgstr ""
 msgid "Our Jury"
 msgstr ""
 
+#: include/class-wp-bootstrap-comment-walker.php:50
+msgid "Place"
+msgstr ""
+
+#: include/class-wp-bootstrap-comment-walker.php:53
+msgid "Edit"
+msgstr ""
+
+#: include/class-wp-bootstrap-comment-walker.php:68
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: include/class-wp-rating-comments.php:17
+msgid "Rating"
+msgstr ""
+
+#: include/class-wp-rating-comments.php:19
+msgid "No rating"
+msgstr ""
+
 #: include/post-like.php:33
 msgid "Like"
 msgstr ""
@@ -73,6 +93,22 @@ msgstr ""
 
 #: template-parts/content.php:16
 msgid "Read more"
+msgstr ""
+
+#: template-parts/content-comments.php:10
+msgid "Leave your comment"
+msgstr ""
+
+#: template-parts/content-comments.php:14
+msgid "Name"
+msgstr ""
+
+#: template-parts/content-comments.php:17
+msgid "Email"
+msgstr ""
+
+#: template-parts/content-comments.php:21
+msgid "Comment"
 msgstr ""
 
 #: activation/class-tgm-plugin-activation.php:327
