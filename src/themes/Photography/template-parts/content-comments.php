@@ -1,6 +1,6 @@
 <?php $user = wp_get_current_user(); ?>
     <?php $usercomment = get_comments(array('user_id' => $user->ID, 'post_id'=>$post->ID) ); ?>
-    <?php if( in_array( 'judge', (array) $user->roles ) && count($usercomment) == 0 ) : ?>
+    <?php if( ( in_array( 'judge', (array) $user->roles ) || in_array( 'photographer', (array) $user->roles ) ) && count($usercomment) == 0 ) : ?>
         <?php
             $comments_arg = array(
                 'form'	=> array(
