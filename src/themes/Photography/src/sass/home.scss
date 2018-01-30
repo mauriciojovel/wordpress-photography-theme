@@ -21,10 +21,10 @@ nav {
   height: 100vh;
   min-height: 300px;
   background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
 .portrait {
@@ -34,7 +34,7 @@ nav {
   -webkit-background-size: auto;
   -moz-background-size: auto;
   -o-background-size: auto;
-  background-size: cover;
+  background-size: contain;
   @include media-breakpoint-up(lg) {
     background-size: contain;
   }
