@@ -36,7 +36,7 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
 							<?php echo get_avatar( $comment, $args['avatar_size'],'mm','', array('class'=>"comment_avatar rounded-circle") ); ?>
 						</a>
 						<?php endif; ?>
-						<h4 class="media-heading "><?php echo get_comment_author_link() ?></h4>
+						<h4 class="pl-2 media-heading"><?php echo get_comment_author_link() ?></h4>
 					</div>
 					<div class="comment-metadata flex-center">
 						<a class="d-none d-lg-block" href="<?php echo esc_url( get_comment_link( $comment->comment_ID, $args ) ); ?>">
