@@ -95,11 +95,26 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>      
+                </div>
             <?php endif; ?>
             <?php $i++ ?>
 <?php   endwhile; ?>
 
 <?php   wp_reset_postdata(); ?>
+
+<?php $query = new WP_Query( $args ); $j = 0; ?>
+<?php if ( isset ( $query ) && $query->have_posts() ) : ?>
+<section class="bg-white">
+    <div class="container">
+<?php   while ( $query->have_posts() ) : $query->the_post(); ?>
+    <div class="row justify-content-around" id="comments-<?php echo $j; ?>" style="<?php echo ($j == 0 ? '' : 'display:none;') ?>">
+        <?php get_template_part( 'template-parts/content', 'grade' ); ?>
+    </div>
+    <?php $j++; ?>
+<?php   endwhile; ?>
+    </div>
+</section>
+<?php   wp_reset_postdata(); ?>
+<?php endif; ?>
 <?php endif; ?>
 <?php get_footer(); ?>

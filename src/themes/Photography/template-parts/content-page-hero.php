@@ -8,9 +8,9 @@
                     $imgUrl = wsl_get_user_custom_avatar( get_the_author_meta( 'ID' ) ); 
                     $imgUrl = $imgUrl == '' ? get_avatar_url( get_the_author_meta( 'ID' ) ) : $imgUrl;
                 ?>
-        
-                <img class = "img-thumbnail rounded-circle mx-auto d-block" src="<?php echo esc_url(  $imgUrl ); ?>" width="75" height="75" />
-                
+                <a href="<?php echo get_permalink(); ?>">
+                    <img class = "img-thumbnail rounded-circle mx-auto" src="<?php echo esc_url(  $imgUrl ); ?>" width="75" height="75" />
+                </a>
                 </div>
                 <div class="col-sm-12 col-lg-6 photo-text p-1 d-none d-lg-block">
                     <?php the_content(); ?>
